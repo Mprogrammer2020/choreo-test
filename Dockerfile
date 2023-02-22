@@ -1,6 +1,6 @@
 # Add a new user "john" with user id 15000
 
-RUN useradd -u 15000 john
+RUN useradd -u 15000 15000
 
 # Change to non-root privilege
 
