@@ -1,3 +1,7 @@
+# Maven build container 
+
+FROM maven:3.8.5-openjdk-11 AS maven_build
+
 # Add a new user "john" with user id 15000
 
 RUN useradd -u 15000 15000
@@ -5,10 +9,6 @@ RUN useradd -u 15000 15000
 # Change to non-root privilege
 
 USER 15000
-
-# Maven build container 
-
-FROM maven:3.8.5-openjdk-11 AS maven_build
 
 COPY pom.xml /tmp/
 
