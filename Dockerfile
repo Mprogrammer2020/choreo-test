@@ -10,7 +10,7 @@ RUN mkdir /home/raul/.m2/repository
 
 # Change to non-root privilege
 
-USER 15000
+USER raul
 
 COPY pom.xml /tmp/
 
