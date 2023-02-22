@@ -4,7 +4,7 @@ RUN useradd -u 15000 15000
 
 # Change to non-root privilege
 
-USER john
+USER 15000
 
 # Maven build container 
 
