@@ -6,6 +6,8 @@ FROM maven:3.8.5-openjdk-11 AS maven_build
 
 RUN useradd -u 15000 15000
 
+RUN mkdir /home/15000/.m2/repository
+
 # Change to non-root privilege
 
 USER 15000
